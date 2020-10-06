@@ -386,6 +386,11 @@ h6{
     font-weight: 400;
     font-size: 11px;
 }
+.category-products{
+    .items_loop{ 
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 .items_loop{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -638,7 +643,27 @@ h6{
 .table td, .table th{
     border-color: #707070;
 }
-
+.pagination{
+    border-radius: 0;
+}
+.page-link{
+    color: #999999;
+    background-color: $secondaryColor;
+    border-color: $secondaryColor;
+    &:hover, &:focus, &.active{ 
+        
+        color: #999999;   
+        background-color: lighten($color: $secondaryColor, $amount: 5);
+        border-color: lighten($color: $secondaryColor, $amount: 5);
+    }
+}
+.page-item{
+    &:first-child, &:last-child{
+        .page-link{
+            border-radius: 0;
+        }
+    }
+}
 
 
 
