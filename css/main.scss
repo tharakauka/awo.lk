@@ -18,6 +18,10 @@ a{
 .w700{
     font-weight: 700;
 }
+h6{
+    font-weight: 700;
+    font-size: 14px;    
+}
 .btn{
     border-radius: 0;
     font-size: 14px;
@@ -51,6 +55,26 @@ a{
     }
 }
 .form-control{
+    border-radius: 0;
+    border-color: #484848;
+    background-color: #373737;
+    color: #999999;
+    font-size: 14px;
+    &:focus, &:active{
+        box-shadow: 0 0 0 0.2rem rgba($color: $primaryColor, $alpha: 0.25);
+        border-color: lighten($color: $primaryColor, $amount: 10);
+        background-color: #373737;
+    }
+}
+.custom-control-label::before{
+    border-color: lighten($color: $secondaryColor, $amount: 10);
+    background-color: lighten($color: $secondaryColor, $amount: 10);
+}
+.custom-control-input:checked~.custom-control-label::before{
+    border-color: lighten($color: $secondaryColor, $amount: 10);
+    background-color: lighten($color: $secondaryColor, $amount: 10);
+}
+.custom-checkbox .custom-control-label::before {
     border-radius: 0;
 }
 .input-group{
@@ -545,6 +569,7 @@ a{
 .specValue{
     display: block;
 }
+
 .cart{
     img{
         width: 75px;
@@ -594,8 +619,18 @@ a{
         }
     }
 }
-
-
+.checkout{
+    img{
+        float: left;
+        margin-right: 10px;
+    }
+    span{
+        margin-right: 5px;
+    }
+}
+.table td, .table th{
+    border-color: #707070;
+}
 
 
 
