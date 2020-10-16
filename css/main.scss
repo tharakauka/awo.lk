@@ -663,12 +663,62 @@ h6{
         }
     }
 }
-
-
-
-
-
-
+.side-bar{
+    .nav-link{
+        color: #FFF;
+    }
+}
+.nav{
+    .sub-nav{
+        padding-left: 25px;
+        .nav-link{
+            color: #A7A7A7;
+        }
+    }
+}
+.card{
+    border-radius: 0;
+    background-color: $secondaryColor;
+    h5{
+        font-size: 20px;
+        font-weight: 400 !important;
+    }
+    .table{
+        th{
+            font-weight: 400 !important;
+            color: #A7A7A7;
+        }
+    }
+}
+.descriptionOrder{
+    display: grid;
+    grid-template-columns: 60px auto;
+}
+.order-summery{
+    width: 50px;
+    height: auto;
+    vertical-align: top;
+    margin-right: 10px;
+    display: inline;
+}
+.profile{
+    label{
+        font-size: 12px;
+    }
+}
+.pricing{
+    h5{
+        color: $primaryColor;
+        font-weight: 400 !important;
+        margin-bottom: 0;
+    }
+    del{
+        display: block;
+    }
+    span{
+        display: block;
+    }
+}
 
 
 
