@@ -91,7 +91,7 @@
     </div>
     <!-- ./end main wrapper -->
 
-    <div class="bg-primary servicesList mt-3">
+    <div class="servicesList mt-3">
         <div class="container">
             <div class="row">
                 <div class="col-6 col-md-3">
