@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
 
+@import 'mixins';
 @import 'variables';
 
 body{
@@ -41,6 +42,7 @@ select{
     &-primary{
         color: #FFF;
         background-color: $primaryColor;
+        // @include linear-gradient($primaryColor, darken($primaryColor, 40));
         border-color: $primaryColor;
         &:hover, &:active, &:focus{
             background-color: darken($color: $primaryColor, $amount: 5);
@@ -116,7 +118,8 @@ select{
     }
 }
 .topBar{
-    background-color: $primaryColor;
+    // background-color: $primaryColor;
+    @include linear-gradient($primaryColor, darken($primaryColor, 40));
     max-height: 40px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -190,6 +193,7 @@ select{
             border-radius: 50%;
             display: inline-block;
             background-color: $primaryColor;
+            // @include linear-gradient($primaryColor, darken($primaryColor, 40));
             color: #FFF;
             width: 40px;
             height: 40px;
@@ -215,7 +219,8 @@ select{
     }
 }
 .bottomBar{
-    background-color: $primaryColor;
+    // background-color: $primaryColor;
+    @include linear-gradient($primaryColor, darken($primaryColor, 40));
     .navbar{
         padding: 4px 0;
         .nav-link{
@@ -386,11 +391,12 @@ select{
 
 .nav-pills{
     .nav-link{
-        border-radius: 0;
+        // border-radius: 0;
         color: #FFF;
         font-weight: 700;
         &.active{
-            background-color: $primaryColor;
+            // background-color: $primaryColor;
+            @include linear-gradient($primaryColor, darken($primaryColor, 40));
         }
     }
 }
@@ -528,7 +534,8 @@ select{
                 ~ label{
                     border-color: $primaryColor;
                     &::after{
-                        background-color: $primaryColor;
+                        // background-color: $primaryColor;
+                        @include linear-gradient($primaryColor, darken($primaryColor, 40));
                     }
                 }
             }
